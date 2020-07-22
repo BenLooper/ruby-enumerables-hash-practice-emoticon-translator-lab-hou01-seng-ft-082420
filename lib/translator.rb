@@ -12,11 +12,13 @@ end
 
 def get_japanese_emoticon(path_file,given_emote)
   results = load_library(path_file) 
-  #results.values.each do |emo| 
-    #if results.values[index][:english] == given_emote
-      #translation = results.values[index][:japanese]
-    #end 
-  #end 
+  emote_list = results.values 
+  emote_list.each do |emo|
+    index = emote_list.find_index(emo)
+    if results.values[index][:english] == given_emote
+      translation = results.values[index][:japanese]
+    end 
+  end 
   binding.pry 
 end
 
