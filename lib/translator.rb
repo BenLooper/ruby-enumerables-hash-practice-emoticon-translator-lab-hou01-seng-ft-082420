@@ -13,7 +13,7 @@ end
 def get_japanese_emoticon(path_file,emote)
   results = load_library(path_file) 
   results.values
-  
+  binding.pry
 end
 
 def get_english_meaning
