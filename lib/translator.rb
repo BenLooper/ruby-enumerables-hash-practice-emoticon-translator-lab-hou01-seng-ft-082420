@@ -19,7 +19,6 @@ def get_japanese_emoticon(path_file,given_emote)
         emote_list[index][:japanese]
     end 
   end 
-  
 end
 
 def get_english_meaning
