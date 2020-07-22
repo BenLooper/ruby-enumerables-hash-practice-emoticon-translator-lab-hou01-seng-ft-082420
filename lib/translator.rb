@@ -4,7 +4,7 @@ require 'pry'
 
 def load_library(path_file)
   library = YAML.load_file(path_file) 
-  binding.pry 
+  library.col
 end
 
 def get_japanese_emoticon
