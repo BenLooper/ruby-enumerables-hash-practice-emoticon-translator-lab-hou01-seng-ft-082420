@@ -10,7 +10,7 @@ def load_library(path_file)
   results
 end
 
-def get_japanese_emoticon(english_emote)
+def get_japanese_emoticon(emote)
   load_library(path_file)
   binding.pry
   
