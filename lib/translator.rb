@@ -27,6 +27,7 @@ def get_english_meaning(path_file, given_emote)
   emote_list = results.values 
   emote_list.each do |emo|
     index = emote_list.find_index(emo)
+    binding.pry
     if emote_list[index][:japanese] == given_emote
         return emote_list[index].to_s 
     end
