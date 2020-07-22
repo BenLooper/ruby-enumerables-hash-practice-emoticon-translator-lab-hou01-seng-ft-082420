@@ -11,7 +11,7 @@ def load_library(path_file)
 end
 
 def get_japanese_emoticon(english_emote)
-  load_library(path_file)
+  load_library()
   binding.pry
   
 end
