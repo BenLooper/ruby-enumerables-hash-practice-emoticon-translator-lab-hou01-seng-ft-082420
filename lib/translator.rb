@@ -10,10 +10,10 @@ def load_library(path_file)
   return results
 end
 
-def get_japanese_emoticon(path_file,emote)
+def get_japanese_emoticon(path_file,given_emote)
   results = load_library(path_file) 
-  results.values
-  binding.pry
+  results.values.select { |emote| emote == given_emote } 
+  
 end
 
 def get_english_meaning
