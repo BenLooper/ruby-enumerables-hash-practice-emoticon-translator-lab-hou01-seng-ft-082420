@@ -8,7 +8,6 @@ def load_library(path_file)
     emo_library[emo] = {english: emo_array[0],japanese: emo_array[1]} 
   end 
   results
-  binding.pry 
 end
 
 def get_japanese_emoticon
