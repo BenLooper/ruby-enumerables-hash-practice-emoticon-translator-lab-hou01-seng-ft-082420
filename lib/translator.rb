@@ -15,8 +15,8 @@ def get_japanese_emoticon(path_file,given_emote)
   #results.values.each do |index| 
     #if results.values[index][:english] == given_emote
       #translation = results.values[index][:japanese]
-    end 
-  end 
+    #end 
+  #end 
   binding.pry 
 end
 
