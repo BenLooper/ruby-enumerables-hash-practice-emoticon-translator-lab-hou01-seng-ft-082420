@@ -19,6 +19,7 @@ def get_japanese_emoticon(path_file,given_emote)
       translation = results.values[index][:japanese]
     end 
   end 
+  translation
   binding.pry 
 end
 
