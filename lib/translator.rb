@@ -5,8 +5,9 @@ require 'pry'
 def load_library(path_file)
   library = YAML.load_file(path_file) 
   results = library.each_with_object({}) do |(emo,emo_array) , emo_library|
+    binding.pry
   end 
-  binding.pry
+  
 end
 
 def get_japanese_emoticon
