@@ -7,6 +7,7 @@ def load_library(path_file)
   results = library.each_with_object({}) do |(emo,emo_array) , emo_library|
     emo_library[emo][:english] = emo_array[0]
     emo_library[emo][:japanese] = emo_array[1]
+    binding.pry 
   end 
   
 end
