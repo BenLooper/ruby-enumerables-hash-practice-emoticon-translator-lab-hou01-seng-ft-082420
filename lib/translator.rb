@@ -12,7 +12,7 @@ end
 
 def get_japanese_emoticon(path_file,given_emote)
   results = load_library(path_file) 
-  results.values.select do |emote| { if
+  results.values.select { |index| if results.values[index][:japanese] == given_emote}
   
 end
 
