@@ -16,6 +16,7 @@ def get_japanese_emoticon(path_file,given_emote)
   emote_list.each do |emo|
     index = emote_list.find_index(emo)
     if emote_list[index][:english] == given_emote
+      binding.pry
         emote_list[index][:japanese]
     end 
   end 
