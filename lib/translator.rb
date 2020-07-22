@@ -14,7 +14,7 @@ def get_japanese_emoticon(path_file,given_emote)
   results = load_library(path_file) 
   results.values.each do |emo| 
     if results.values[emo.index][:english] == given_emote
-      translation = results.values[index][:japanese]
+      translation = results.values[emo.index][:japanese]
     end 
   end 
   binding.pry 
