@@ -17,9 +17,9 @@ def get_japanese_emoticon(path_file,given_emote)
     index = emote_list.find_index(emo)
     if emote_list[index][:english] == given_emote
         return emote_list[index][:japanese]
-    
-    end 
+    end
   end 
+  p "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
